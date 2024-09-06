@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  flex: 1;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #555;
+  padding: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #333;
+}
+/*Cuadro a la izquierda*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sidebar .promo p {
+  margin-bottom: 15px;
+}
+
+.sidebar .promo button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .promo button:hover {
+  background-color: #0056b3;
+}
+/*Cursos Destacados*/
+.courses {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.courses h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #007bff;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-grid img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.course-grid img:hover {
+  transform: scale(1.05);
+}
+
+.professors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.professor-profile,
+.professor-achievements {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.professor-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+/*Videos*/
+.video-courses {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.video-courses h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.video-course {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.video-course:hover {
+  transform: translateY(-10px);
+}
+
+/*Footer*/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer .contacts p {
+  margin: 5px 0;
+}

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  flex: 1;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #555;
+  padding: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #333;
+}
+
+/* Sección de Inscripciones */
+.inscripciones-section {
+  background: linear-gradient(135deg, #ffa500, #ff4500);
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.inscripciones-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.inscripciones-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.inscripciones-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.inscripciones-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.inscripciones-btn {
+  padding: 14px 40px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.inscripciones-btn:hover {
+  background-color: #ff4500;
+  transform: scale(1.1);
+}
+
+.inscripciones-btn:active {
+  transform: scale(0.98);
+}
+
+/*Footer*/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer .contacts p {
+  margin: 5px 0;
+}
