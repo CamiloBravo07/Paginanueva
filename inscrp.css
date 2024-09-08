@@ -33,7 +33,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-around;
-  background-color: #555;
+  background: linear-gradient(135deg, #5dd9ff, #000000);
   padding: 15px;
 }
 
@@ -48,10 +48,9 @@ body {
 .nav a:hover {
   background-color: #333;
 }
-
 /* Sección de Inscripciones */
 .inscripciones-section {
-  background: linear-gradient(135deg, #ffa500, #ff4500);
+  background: linear-gradient(135deg, #fcfaf7, #000000);
   padding: 60px 20px;
   color: white;
   text-align: center;
